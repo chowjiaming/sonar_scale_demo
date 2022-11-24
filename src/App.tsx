@@ -1,5 +1,4 @@
 import demoStitch from "./assets/demo-stitch.png";
-import "./App.css";
 import styled from "styled-components";
 
 function App() {
@@ -24,5 +23,21 @@ const StyledHeader = styled.h1`
   line-height: 1.1;
   color: #213547;
 `;
+// const StyledInfoPanel = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   background-color: #213547;
+//   color: #fff;
+//   padding: 1em;
+//   border-radius: 0.5em;
+//   margin: 1em;
+// `;
+// const StyledParagraph = styled.p`
+//   font-size: 1.6em;
+//   line-height: 1.1;
+//   color: #213547;
+// `;
 
 export default App;
