@@ -1,0 +1,54 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    // "project": "./packages/**/tsconfig.json",
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "jsxPragma": null
+  },
+  "plugins": ["@typescript-eslint", "react", "react-hooks"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
+    "prettier"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "no-unused-vars": "off",
+    "no-self-assign": "warn",
+    "linebreak-style": ["error", "unix"],
+    "@typescript-eslint/no-unused-vars": ["warn", {"ignoreRestSiblings": true}],
+    "@typescript-eslint/no-non-null-assertion": "off", // re-enable after zod?
+    "@typescript-eslint/no-explicit-any": "off", // re-enable after zod?
+    "react/prop-types": "off",
+    "react/display-name": "warn",
+    "react/hook-use-state": "warn",
+    "react/no-danger": "error",
+    "react/self-closing-comp": "warn",
+    "react/jsx-fragments": ["error", "syntax"],
+    "react/jsx-no-useless-fragment": "warn",
+    "react/jsx-sort-props": [
+      "warn",
+      {
+        "callbacksLast": true,
+        "shorthandLast": true,
+        "multiline": "last",
+        "noSortAlphabetically": true,
+        "reservedFirst": true
+      }
+    ],
+    "react-hooks/exhaustive-deps": "error",
+    "react/no-unknown-property": "warn"
+  }
+}
